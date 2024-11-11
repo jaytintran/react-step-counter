@@ -1,11 +1,11 @@
 import React from "react";
 
-function Button({ onClick, styles, children }) {
+function Button({ onClick, styles, children, border, bgColor }) {
   return (
     <button
       onClick={onClick}
       className={styles}
-      style={{ cursor: "pointer", border: "1px solid #7950f2" }}
+      style={{ border, backgroundColor: bgColor }}
     >
       {children}
     </button>
